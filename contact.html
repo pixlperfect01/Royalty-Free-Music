@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Contact us | mywebsite</title>
+        <style>
+            body {
+                background-color:rgb(200, 255, 255);
+            }
+            .inputsize {
+	            width: 300px;
+	            height: 40px;
+		    }
+		    .inputsize2 {
+	            width: 350px;
+	            height: 250px;
+		    }
+            #submit {
+                background-color: #23FF2E;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius:6px;
+                color: #FF2323;
+                font-family: 'Oswald';
+                font-size: 20px;
+                text-decoration: none;
+                cursor: pointer;
+                border:none;
+            }
+            input[type=email] {
+                padding:5px; 
+                border:2px solid #ccc; 
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+            }
+            input[type=email]:focus {
+                border-color:#333;
+            }
+		    input[type=text] {
+                padding:5px; 
+                border:2px solid #ccc; 
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+            }
+		    input[type=text]:focus {
+                border-color:#333;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <font size="+2">Suggestions</font>
+	        <form class="form-style" method="POST" action="https://formspree.io/williamsjpoms.6a@gmail.com">
+                <input type="email" class="inputsize" name="email" required="true" placeholder="Your email"><br><br>
+                <input type="text" class="inputsize" name="Name" required="true" placeholder="Your name"><br><br>
+	            <input type="text" class="inputsize2" name="suggestions/complaints" required="true" placeholder="Suggestions/Complaints"><br><br>
+                <button type="submit" name="submit" id="submit">Submit</button>
+	        </form>
+        </center>
+    </body>
+</html>
