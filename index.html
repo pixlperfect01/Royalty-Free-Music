@@ -2,14 +2,26 @@
     <head>
 		<title>my website</title>
 		<style>
-			#grad {
-				height: 300px;
-				background-image: linear-gradient(blue, red);
+			body {
+				background-image: linear-gradient(green, red);
 			}
+			ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+			.active {
+                background-color: #4CAF50;
+                color: white;
+            }
         </style>
     </head>
     <body>
-        <a href="contact.html">hi</a>
-	    <div id="grad"></div>
-	</body>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
+    </body>
 </html>
