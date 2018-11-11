@@ -1,4 +1,6 @@
 // variable to store HTML5 audio element
+var vid = document.getElementById("audioplayer");
+alert(vid.paused);
 var music = document.getElementById('audioplayer');
   
 function playAudio() {
