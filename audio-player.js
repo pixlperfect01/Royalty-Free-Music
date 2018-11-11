@@ -1,14 +1,14 @@
-var aud = $('audio')[0];
-$('.play-pause').on('.click', function() {
-    if(aud.paused) {
-        aud.play();
-        $('.play-pause').removeClass('icon-play');
-        $('.play-pause').addClass('icon-stop');
-    }
-    else {
-        aud.pause();
-        $('.play-pause').removeClass('icon-stop');
-        $('.play-pause').addClass('icon-play');
-    }
-    
-})
+// variable to store HTML5 audio element
+var music = document.getElementById('audio_player');
+  
+function playAudio() {
+  if (music.paused) {
+    music.play();
+    pButton.className = "";
+    pButton.className = "pause";
+  } else {
+    music.pause();
+    pButton.className = "";
+    pButton.className = "play";
+  }
+}
