@@ -3,6 +3,15 @@
         <title>Energy | Song</title>
         <link rel="stylesheet" href="navbar.css" />
         <link rel="shortcut icon" href="titleimage_lKZ_icon.ico" />
+        <script src="jquery.min.js"></script>
+        <script type="text/javascript">
+$(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
         <style>
             body {
                 background-color: rgb(150, 200, 0);
@@ -40,6 +49,5 @@
             Your browser does not support the audio element
         </audio>
         </div>
-        <script src="rightclick.js"></script>
     </body>
 </html>
