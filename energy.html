@@ -10,13 +10,6 @@
             #songtitle {
                 text-indent: 125px;
             }
-            audio::-webkit-media-controls {
-    overflow: hidden !important
-}
-audio::-webkit-media-controls-enclosure {
-    width: calc(100% + 32px);
-    margin-left: auto;
-}
         </style>
     <body>
         <ul>
@@ -42,7 +35,7 @@ audio::-webkit-media-controls-enclosure {
         <br>
         <br>
         <div id="songtitle">
-        <audio controls class="songtitle">
+        <audio controlsList="nodownload" class="songtitle">
             <source src="energy.mp3" type="audio/mpeg">
             Your browser does not support the audio element
         </audio>
