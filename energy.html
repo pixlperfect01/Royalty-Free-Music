@@ -3,15 +3,11 @@
         <title>Energy | Song</title>
         <link rel="stylesheet" href="navbar.css" />
         <link rel="shortcut icon" href="titleimage_lKZ_icon.ico" />
-        <script src="jquery.min.js"></script>
-        <script type="text/javascript">
-$(document).ready(function () {
-    //Disable full page
-    $("body").on("contextmenu",function(e){
-        return false;
-    });
+        <script>
+            jQuery(document).ready(function(){
+   jQuery('body').on('contextmenu', 'audio', function() { return false; });
 });
-</script>
+        </script>
         <style>
             body {
                 background-color: rgb(150, 200, 0);
