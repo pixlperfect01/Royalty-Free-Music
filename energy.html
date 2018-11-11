@@ -2,10 +2,10 @@
     <head>
         <title>Energy | Song</title>
         <link rel="stylesheet" href="navbar.css" />
-        <!--
         <link rel="stylesheet" href="audio-player.css" />
--->
+        <!--
         <script src="audio-player.js"></script>
+-->
         <link rel="shortcut icon" href="titleimage_lKZ_icon.ico" />
         
         <style>
@@ -40,20 +40,16 @@
         <br>
         <br>
         <!-- <div id="songtitle"> -->
-        <audio src="energy.mp3"></audio>
-        <div class="player">
-            <div class="info">
-                <div class="name">Energy</div>
-                <div class="singer">Unknown Artist</div>
-            </div>
-            <div class="btns">
-                <div class="iconfront play-pause icon-play"></div>
-                <div class="iconfront next icon-next"></div>
-            </div>
-            <div class="progress">
-                
-            </div>
-        </div>
+        <div id="audioplayer" style="border: 1px solid black">
+  <button id="pButton" class="play" onclick="playAudio()"></button>
+    <div id="timeline">
+    <div id="playhead"></div>
+  </div>
+  <div id="volume_control">
+    <label id="rngVolume_label" for="rngVolume">Volume:</label>
+    <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="1">
+  </div>
+</div>
         <!-- </div> -->        
     </body>
 </html>
