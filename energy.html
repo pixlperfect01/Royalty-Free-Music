@@ -3,7 +3,30 @@
         <title>Energy | Song</title>
         <link rel="stylesheet" href="navbar.css" />
         <link rel="stylesheet" href="audio-player.css" />
+        <!--
         <script src="audio-player.js"></script>
+-->
+        <script>
+            // variable to store HTML5 audio element
+var music = document.getElementById('audio_player');
+  
+function playAudio() {
+  if (music.paused) {
+    music.play();
+    pButton.className = "";
+    pButton.className = "pause";
+  } else {
+    music.pause();
+    pButton.className = "";
+    pButton.className = "play";
+  }
+}
+        </script>
+        <script>
+            function setVolume(volume) {
+   music.volume = volume;
+}
+        </script>
         <link rel="shortcut icon" href="titleimage_lKZ_icon.ico" />
         
         <style>
