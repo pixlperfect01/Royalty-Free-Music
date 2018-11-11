@@ -4,8 +4,8 @@
         <link rel="stylesheet" href="navbar.css" />
         <!--
         <link rel="stylesheet" href="audio-player.css" />
-        <script src="audio-player.js"></script>
 -->
+        <script src="audio-player.js"></script>
         <link rel="shortcut icon" href="titleimage_lKZ_icon.ico" />
         
         <style>
@@ -39,11 +39,21 @@
         <br>
         <br>
         <br>
-        <div id="songtitle">
-        <audio controls controlsList="nodownload" class="songtitle">
-            <source src="energy.mp3" type="audio/mpeg">
-            Your browser does not support the audio element
-        </audio>
-        </div>        
+        <!-- <div id="songtitle"> -->
+        <audio src="energy.mp3"></audio>
+        <div class="player">
+            <div class="info">
+                <div class="name">Energy</div>
+                <div class="singer">Unknown Artist</div>
+            </div>
+            <div class="btns">
+                <div class="iconfront play-pause icon-play"></div>
+                <div class="iconfront next icon-next"></div>
+            </div>
+            <div class="progress">
+                
+            </div>
+        </div>
+        <!-- </div> -->        
     </body>
 </html>
