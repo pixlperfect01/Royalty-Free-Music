@@ -12,3 +12,6 @@ function playAudio() {
     pButton.className = "play";
   }
 }
+function setVolume(volume) {
+   music.volume = volume;
+}
